@@ -14,12 +14,11 @@ CAR_SIZE_Y = 60
 
 BORDER_COLOR = (255, 255, 255, 255)
 
-current_generation = 0 # Generation counter
+current_generation = 0 
 
 class Car:
 
     def __init__(self):
-        # Load Car Sprite and Rotate
         self.sprite = pygame.image.load('car.png').convert()
         self.sprite = pygame.transform.scale(self.sprite, (CAR_SIZE_X, CAR_SIZE_Y))
         self.rotated_sprite = self.sprite 
